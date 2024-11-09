@@ -1196,7 +1196,31 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 
 ## 📋 Contoh Output Aplikasi
 
-### Langkah 1: Clone Repositori
+### 1. Halaman Utama
+
+<br/>
+
+```python
++======================= MENU ===========================+
+|                 1. Register                            |
+|                 2. Login user                          |
+|                 3. Login admin                         |
+|                 4. Keluar                              |
++========================================================+
+Pilih opsi (1/2/3/4):
+```
+
+### 2. Registrasi Pengguna
+
+<br/>
+
+```
+Masukkan username: userbaruku
+Masukkan password: *******
+Registrasi berhasil!
+```
+
+
 ```bash
 git clone https://github.com/rai269/sportfest.git
 cd sportfest
