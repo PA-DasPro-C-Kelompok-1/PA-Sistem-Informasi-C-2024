@@ -31,7 +31,17 @@
 - [Lisensi](#lisensi)
 
 ## 💫 Flowchart
-BAGIAN PILIHAN
+
+SELURUH FLOWCHART
+
+![WhatsApp Image 2024-11-09 at 21 13 51](https://github.com/user-attachments/assets/0863ca36-bfbb-4c90-9b0e-0b9de82dfb15)
+
+![WhatsApp Image 2024-11-09 at 21 14 07](https://github.com/user-attachments/assets/a6a9c6fa-29ea-4106-bd7f-807f5a88b3f4)
+
+![WhatsApp Image 2024-11-09 at 21 13 55](https://github.com/user-attachments/assets/45cb501b-cfef-4730-a41b-22cc61366a4a)
+
+
+### BAGIAN PILIHAN(MENU PALING AWAL)
 
 ![WhatsApp Image 2024-11-09 at 19 41 44](https://github.com/user-attachments/assets/a0cebd2b-f9f1-49c9-8c38-3a1b5b503d37)
 
@@ -45,7 +55,89 @@ BAGIAN PILIHAN
 
 4. Pada pilihan 3, akan melakukan login admin dengan tahapan memasukan userrname dan password, lalu data data tersebut juga akan terrsimpan di data pengguna, lalu jika username atau passwprd tidak sesuai, maka akan kembali memasukkan ulang username dan password. Tetapi jika berhasio, maka akan keluar output"login berhasil, selamat datang".
 
-5. Pada pilihan 4, akan keluar program
+![WhatsApp Image 2024-11-09 at 20 07 41](https://github.com/user-attachments/assets/d960b96c-3ca5-4b66-a1a5-236f4ba43d40)
+
+5. Pada pilihan 4, akan keluar program.
+
+![WhatsApp Image 2024-11-09 at 20 06 05](https://github.com/user-attachments/assets/56435297-c173-4328-b092-9f535df26f42)
+
+6. Jika salah memilih pilihan/memilih angka tidak sesuai dari pilihan, maka akan mengalami error.
+
+
+### BAGIAN PEMBELI
+TAMPILKAN USER
+
+![WhatsApp Image 2024-11-09 at 20 14 50](https://github.com/user-attachments/assets/baa64ef3-c686-40f7-8e31-b7dc855f347f)
+
+1. Pada saat selesai login, maka akan di arahkan ke pilihan baru, dimana pilihan tersebut ada 5, diantaranya pilihan 1.beli tiket, 2. daftar tiket, 3.tambah saldo, 4.cek saldo, dan 5.keluar.
+
+![WhatsApp Image 2024-11-09 at 20 24 40](https://github.com/user-attachments/assets/38018cff-8582-4860-b2a8-5eeed652cdcb)
+
+2. Jika pilih 1, maka akan menampilkan tiket, lalu bisa juga mencari tiket pilihan 1, maka akan di arahkan untuk memasukkan nama olahraga yang ingin di cari, lalu jika nama olahraga tersebut tidak ada, maka akan kembali untuk memasukkan nama olahraga lagi. Tetapi jika benar, maka akan menampilkan jadwal pertandingan. Setelah itu, akan ada pilihan mencari tiket lain?jika iya, maka akan kembali melakukan input nama  olahraga.
+
+![WhatsApp Image 2024-11-09 at 20 32 14](https://github.com/user-attachments/assets/09afc42f-6c02-49bd-894d-d34424827a88)
+
+4. Jika pilih 2, maka akan sorting tiket, maka akan menampilkan jadwal pertandingan yang sudah di sortir dan kembali ke menu sebelumnya.
+   
+![WhatsApp Image 2024-11-09 at 20 38 54](https://github.com/user-attachments/assets/81b05468-2587-48bb-96b0-787fa4c062ef)
+
+5. Jika pilih 3, maka akan keluar dan kembali ke menu sebelumnya.
+
+![WhatsApp Image 2024-11-09 at 20 35 26](https://github.com/user-attachments/assets/6dfd2063-69fa-43d0-b505-d090a2709a61)
+
+6. Jika measukkan angka yang tidak sesuai, maka akan kembali memasukkan angka lagi.
+
+
+BELI TIKET
+
+![WhatsApp Image 2024-11-09 at 20 47 15](https://github.com/user-attachments/assets/e7c42163-ff80-40e5-823b-132269ace55e)
+
+1. Jika sudah memilih pilihan kedua, maka akan melakukan beli tiket dan di arahkan untuk memilih no pertandingan, dan jika berhasil, nanti menampilkan struk dan kembali ke menu user. Tetapi jika memilih pilihan 6, maka akan langsung kembali ke menu user juga.
+
+TAMBAH SALDO
+
+![WhatsApp Image 2024-11-09 at 20 58 08](https://github.com/user-attachments/assets/009c0e3a-3402-42fe-b55e-951c0ac78117)
+
+1. Pada pilihan 3, akan melakukan tambah saldo, dimana nanti akan di arahkan langsung menampilkan pilihan nominal saldo, lalu jika merasa kurang pas, maka akan di tanya ingin lanjut?jika tidak, maka akan langsung kembali ke menu user, jika lanjut, maka akan menampilkan saldo sekarang dan ada pilihan untuk menambah saldo lagi atau tidak, jika iya maka akan kembali tambah saldo, jika tidak maka akan keluar dan kembali ke menu user.
+
+
+CEK SALDO
+
+![Screenshot 2024-11-09 211607](https://github.com/user-attachments/assets/09ef82d8-9ad8-4863-a1ce-18af6fa16702)
+
+1.  Pada pilihan 4, untuk mengecek saldo.
+
+
+CARI
+
+![Screenshot 2024-11-09 211951](https://github.com/user-attachments/assets/e16934f5-a0dc-4e1c-8415-26f7209bde86)
+
+1.  Menu 5, adalah untuk mencari nama olahraga, lalu jika nama olahraga tidak sesuai pencarian, maka akan kembali ke menu user, jika berhasil maka akan menampilkan jadwal pertandingan dan kembali ke menu user.
+
+
+KELUAR
+
+1. Pada menu 6 ini, akan keluar dan kembali ke menu paling awal.
+
+
+
+## BAGIAN ADMIN
+
+![Screenshot 2024-11-09 213105](https://github.com/user-attachments/assets/6ea3181c-0b27-4532-9a1a-3abf9c00a776)
+
+1. Pada pilihan menu 3 yaitu admin
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
