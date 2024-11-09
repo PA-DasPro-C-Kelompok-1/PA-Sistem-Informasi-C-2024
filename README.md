@@ -1194,7 +1194,7 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
   - uuid
   - datetime
 
-## 🚀 Instalasi
+## 📋 Contoh Output Aplikasi
 
 ### Langkah 1: Clone Repositori
 ```bash
