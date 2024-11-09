@@ -43,7 +43,9 @@ BAGIAN PILIHAN
 
 ![WhatsApp Image 2024-11-09 at 19 56 38](https://github.com/user-attachments/assets/15314ce6-8a47-4dc5-86ea-e12c305e0c83)
 
-4. Pada pilihan 3, akan melakukan login admin dengan tahapan memasukan userrname dan password.
+4. Pada pilihan 3, akan melakukan login admin dengan tahapan memasukan userrname dan password, lalu data data tersebut juga akan terrsimpan di data pengguna, lalu jika username atau passwprd tidak sesuai, maka akan kembali memasukkan ulang username dan password. Tetapi jika berhasio, maka akan keluar output"login berhasil, selamat datang".
+
+5. Pada pilihan 4, akan keluar program
 
 
 
