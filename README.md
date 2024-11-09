@@ -1194,13 +1194,13 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
   - uuid
   - datetime
 
-## 📋 Contoh Output Aplikasi
+## 📋 Contoh Output User
 
 ### 1. Halaman Utama
 
 <br/>
 
-```python
+```
 +======================= MENU ===========================+
 |                 1. Register                            |
 |                 2. Login user                          |
@@ -1220,6 +1220,141 @@ Masukkan password: *******
 Registrasi berhasil!
 ```
 
+<br/>
+
+### 3. Login Pengguna
+
+<br/>
+
+```
+Username: userbaruku
+Password: *******
++=================================================+
+|           SELAMAT DATANG DI SPORTFEST           |
++=================================================+
+```
+
+<br/>
+
+### 4. Menu Pelanggan
+
+<br/>
+
+```
++-----------------------------------+
+|           Menu Pelanggan          |
++-----------------------------------+
+|     1. Tampilkan tiket            |
+|     2. Beli tiket nonton          |
+|     3. Lihat Saldo E-Money        |
+|     4. Top Up Saldo E-Money       |
+|     5. Cari                       |
+|     6. Keluar                     |
++-----------------------------------+
+```
+<br/>
+
+### 5. Pemilihan Kategori Olahraga (User membeli Tiket)
+
+<br/>
+
+```
+=============================================
+             BELI TIKET NONTON               
+=============================================
+1. Bola
+2. Badminton 
+3. Basket
+4. Voli
+5. Futsal
+6. Kembali
+```
+
+<br/>
+
+### 6. Detail Pembelian Tiket
+
+<br/>
+
+```
++-------------------+---------------------------+
+|     Detail        |      Informasi            |
++-------------------+---------------------------+
+| Pertandingan      | Persib vs Persija         |
+| Kategori          | Bola                      |
+| Waktu             | 20 Desember 2023 - 19:00  |
+| Harga Tiket Ekonomi| Rp 50,000                |
+| Harga Tiket VIP   | Rp 150,000                |
++-------------------+---------------------------+
+```
+
+<br/>
+
+### 7. Pembelian Tiket
+
+<br/>
+
+```
+LIMIT PEMBELIAN TIKET HANYA 5 TIKET
+========================================
+             1. Tiket Ekonomi           
+             2. Tiket VIP               
+========================================
+Tiket yang ingin dibeli (1/2): 1
+Berapa banyak tiket yang ingin anda beli: 2
+```
+
+<br/>
+
+### 8. Invoice Pembelian
+
+<br/>
+
+```
+==========================================
+        STRUK PEMBELIAN TIKET SPORTFEST
+==========================================
+No. Invoice   : A1B2C3D4
+Tanggal       : 2023-12-15 14:30:45
+Nama Pembeli  : userbaruku
+==========================================
+Pertandingan  : Persib vs Persija
+Kategori      : Bola
+Tanggal/Waktu : 20 Desember 2023 - 19:00
+==========================================
+Jenis Tiket   : Ekonomi
+Jumlah Tiket  : 2
+Harga Satuan  : Rp 50,000
+Total Harga   : Rp 100,000
+==========================================
+     Terima kasih atas pembelian Anda!
+==========================================
+```
+
+<br/>
+
+### 9. Top Up Saldo
+
+<br/>
+
+```
++=================================+
+|          TOP UP SALDO           |
++=================================+
+NO    PILIHAN
+[1]   Rp 50.000
+[2]   Rp 100.000
+[3]   Rp 500.000
+[4]   Rp 1.000.000
+[5]   Rp 10.000.000
+[6]   Kembali
+
+Masukkan pilihan nominal (1-6):
+```
+
+<br/>
+
+## Output Contoh Admin
 
 ```bash
 git clone https://github.com/rai269/sportfest.git
