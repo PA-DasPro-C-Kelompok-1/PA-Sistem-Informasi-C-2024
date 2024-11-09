@@ -12,10 +12,7 @@
 - [Lisensi](#lisensi)
 
 ## 💫 Flowchart
-```
-kontol tuh
 
-```
 
 
 ## 🌟 Pendahuluan
@@ -31,16 +28,59 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 ### Fitur Pengguna
 1. **Manajemen Akun**
    - Registrasi
-   - Login
-   - Lihat saldo E-Money
 
-2. **Pembelian Tiket**
+      ```
+      def daftaruser():
+       users = loadDataUser ()
+       while True:
+        try:
+            while True:
+                namaUser  = input("Masukkan nama (min 3 karakter maks 50 karakter): ").strip()
+                if len(namaUser ) < 3:
+                    print("Nama pengguna harus minimal 3 karakter!")
+                elif len(namaUser) > 50:
+                    print("Nama pengguna tidak boleh lebih dari 50 karakter!")
+                elif any(user["Nama User"] == namaUser  for user in users):
+                    print(f"{namaUser } sudah terdaftar.")
+                else:
+                    break
+            
+            while True:
+                passwordUser  = pwinput.pwinput("Password (min 6 karakter): ", "*")
+                if len(passwordUser ) < 6:
+                    print("Password harus minimal 6 karakter!")
+                else:
+                    break
+
+            new_user = {
+                "Nama User": namaUser ,
+                "Pw User": passwordUser ,
+                "Saldo": 0
+            }
+            users.append(new_user)
+            savedataUser (users)
+            print('''
+            +==================================================+
+            |             REGISTER ANDA BERHASIL               |
+            +==================================================+''')
+            break
+        except (ValueError):
+            print("\n Mohon masukkan data yang valid")
+        except KeyboardInterrupt:
+            print("jangan tekan ctrl + C!")
+      ```
+
+   - Login Admin
+   - Login User
+
+1. **Pembelian Tiket**
    - Pilih cabang olahraga
    - Beli tiket Ekonomi/VIP
    - Generate invoice
 
-3. **Fitur Tambahan**
+2. **Fitur Tambahan**
    - Top up saldo
+   - Lihat saldo E-Money
    - Pencarian tiket
    - Sorting tiket
 
