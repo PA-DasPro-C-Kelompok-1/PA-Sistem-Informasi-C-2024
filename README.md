@@ -345,9 +345,13 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 
 
       ```
+   
     <br/>
+    
    - Generate invoice
+     
      <br/>
+     
      ```python
         def generate_invoice(username, pertandingan, jenis_tiket, jumlah_tiket, total_harga):
           try:
@@ -406,9 +410,13 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
      ```
       
     <br/>
+    
 2. **Fitur Tambahan**
+   
    - Top up saldo
+     
     <br/>
+    
    ```python
          def topUp4():
           while True:
@@ -483,8 +491,11 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 
       ```
     <br/>
+    
    - Lihat saldo E-Money
+     
  <br/>
+ 
    ```python
       def lihatSaldo3():
        while True:
@@ -589,9 +600,12 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
        except Exception as e:
            print(f"\nTerjadi kesalahan: {str(e)}"))
    ```
+
  <br/>
    - Sorting tiket
+     
  <br/>
+ 
    ```python
       def sorting_tiket():
        os.system("cls")
@@ -623,11 +637,15 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
        print(tabel)
    
    ```
+
  <br/>
+ 
 ### Fitur Admin
+
 3. **Manajemen Tiket**
    
    - Tambah tiket baru
+     
 <br/>
 
    ```python
@@ -722,12 +740,15 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
                print("\n Mohon masukkan data yang valid")
            except KeyboardInterrupt:
                print("jangan tekan ctrl + C!")
-      ```
+   ```
+<br/>
+
 - Update informasi tiket
+  
   <br/>
 
    ```python
-         def update():
+      def update():
        os.system("cls")
        print("=====UPDATE TIKET=====")
        print("")
@@ -852,9 +873,10 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
                print("jangan tekan ctrl + C!")
    ```
 
-
+<br/>
 
    - Hapus tiket
+     
    <br/>
 
    ```python
@@ -975,10 +997,14 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
                break
    ```
 
+<br/>
    
 4. **Manajemen Jadwal**
+   
    - Lihat jadwal pertandingan
+     
      <br/>
+     
      ```python
      def bola():
         tabel = PrettyTable()
@@ -1066,8 +1092,11 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
        futsal()
      ```
      <br/>
+     
    - Cari tiket
+     
      <br/>
+     
      ```python
         def cari_tiket():
        while True:
@@ -1116,8 +1145,11 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
                print(f"\nTerjadi kesalahan: {str(e)}")
      ```
      <br/>
+     
    - Sorting tiket
+     
      <br/>
+     
      ```python
      def sorting_tiket():
        os.system("cls")
