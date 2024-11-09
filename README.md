@@ -1509,10 +1509,6 @@ Masukkan Password Anda: **********
 
 <br/>
 
-# ⭐ TERIMA KASIH!! ⭐
-
-<br/>
-
 ### 3. Menu Utama Admin
 
 <br/>
@@ -1696,3 +1692,5 @@ Paket Indonesia vs Thailand telah dihapus
 ```
 
 <br/>
+
+# ⭐ TERIMA KASIH!! ⭐
