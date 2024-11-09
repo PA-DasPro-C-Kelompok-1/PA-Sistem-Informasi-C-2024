@@ -31,6 +31,20 @@
 - [Lisensi](#lisensi)
 
 ## 💫 Flowchart
+BAGIAN PILIHAN
+
+![WhatsApp Image 2024-11-09 at 19 41 44](https://github.com/user-attachments/assets/a0cebd2b-f9f1-49c9-8c38-3a1b5b503d37)
+
+1. Pada awal Mulai, akan ada 4 pilihan menu, diantaranya pilihan 1. register, 2.login user, 3.login admin, 4.keluar. Jika memilih pilihan 1, maka akan melakukan register dengan tahapan memasukkan username dan memasukkan password. JIka username dan password tidak sesuai, maka akan kembali ke masukkan username dan password. Lalu, jika berhasil, maka akan keluar output(register anda berhasil.
+
+![WhatsApp Image 2024-11-09 at 19 41 47](https://github.com/user-attachments/assets/2186d130-dcc7-46e5-b6de-0caaa47ee1f2)
+
+2. Pada pilihan 2, akan melakukan login user dengan tahapan memasukkan username da password, lalu data tersebut akan tersimpan di data pengguna, lalu jika username atau password tidak sesuai, maka akan kembali masukkan username dan password ulang. Tetapi jika berhasil, maka akan keluar output"login berhasil, selamat datang(nama).
+
+![WhatsApp Image 2024-11-09 at 19 56 38](https://github.com/user-attachments/assets/15314ce6-8a47-4dc5-86ea-e12c305e0c83)
+
+4. Pada pilihan 3, akan melakukan login admin dengan tahapan memasukan userrname dan password.
+
 
 
 
