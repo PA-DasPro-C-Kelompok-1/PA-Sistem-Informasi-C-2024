@@ -1,0 +1,42 @@
+[
+    {
+        "Nama User": "halo",
+        "Pw User": "halo",
+        "Saldo": 50200000
+    },
+    {
+        "Nama User": "ikan",
+        "Pw User": "ikan",
+        "Saldo": 50000
+    },
+    {
+        "Nama User": "Jabbar",
+        "Pw User": "123",
+        "Saldo": 10000000
+    },
+    {
+        "Nama User": " ",
+        "Pw User": " ",
+        "Saldo": 0
+    },
+    {
+        "Nama User": "1",
+        "Pw User": "1",
+        "Saldo": 20600000
+    },
+    {
+        "Nama User": "2",
+        "Pw User": "2",
+        "Saldo": 0
+    },
+    {
+        "Nama User": "                                            ",
+        "Pw User": "",
+        "Saldo": 0
+    },
+    {
+        "Nama User": "test",
+        "Pw User": "test",
+        "Saldo": 9600000
+    }
+]

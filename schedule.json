@@ -1,0 +1,218 @@
+{
+    "Kategori": [
+        {
+            "Nama Kategori": "Bola",
+            "Jadwal": [
+                {
+                    "Pertandingan": "Borneo FC vs Madura FC",
+                    "Kategori": "U20",
+                    "Tanggal/Waktu": "Selasa, 24 Desember 2024",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "Arema FC vs Persija Jakarta",
+                    "Kategori": "U17",
+                    "Tanggal/Waktu": "Rabu, 25 Desember 2024",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "Persebaya Surabaya vs Persipa",
+                    "Kategori": "Senior",
+                    "Tanggal/Waktu": "Jumat, 27 Desember 2024",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "Jabbar FC vs Jomok (Jowo Mojokerto)",
+                    "Kategori": "U70",
+                    "Tanggal/Waktu": "69 April 2069",
+                    "Harga Tiket Ekonomi": 50000000,
+                    "Harga Tiket VIP": 150000000
+                },
+                {
+                    "Pertandingan": "Rehan FC vs Kadal FC",
+                    "Kategori": "U1945",
+                    "Tanggal/Waktu": "w1324235324532",
+                    "Harga Tiket Ekonomi": 120000,
+                    "Harga Tiket VIP": 300000
+                },
+                {
+                    "Pertandingan": "kocak vs kocak",
+                    "Kategori": "U90",
+                    "Tanggal/Waktu": "27 Agustus 1201",
+                    "Harga Tiket Ekonomi": 120000,
+                    "Harga Tiket VIP": 220000
+                },
+                {
+                    "Pertandingan": "kocak",
+                    "Kategori": "kocak",
+                    "Tanggal/Waktu": "kocak",
+                    "Harga Tiket Ekonomi": 123,
+                    "Harga Tiket VIP": 123
+                }
+            ]
+        },
+        {
+            "Nama Kategori": "Badminton",
+            "Jadwal": [
+                {
+                    "Pertandingan": "Rehan vs Fakri",
+                    "Kategori": "Tunggal Putra",
+                    "Tanggal/Waktu": "Rabu, 1 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "Furina vs Hu Tao",
+                    "Kategori": "Tunggal Putri",
+                    "Tanggal/Waktu": "Kamis, 2 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "Samsul-Moreno vs Aris-Zyrus",
+                    "Kategori": "Ganda Putra",
+                    "Tanggal/Waktu": "Jumat, 3 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "Noelle-Stelle vs Anita-Makswin",
+                    "Kategori": "Ganda Putri",
+                    "Tanggal/Waktu": "Sabtu, 4 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "Idsur vs Rusdi",
+                    "Kategori": "Jowo Mojokerto",
+                    "Tanggal/Waktu": "31 Februari 1965",
+                    "Harga Tiket Ekonomi": 40000000,
+                    "Harga Tiket VIP": 60000000
+                }
+            ]
+        },
+        {
+            "Nama Kategori": "Basket",
+            "Jadwal": [
+                {
+                    "Pertandingan": "Leakers vs Golden State",
+                    "Kategori": "Putra",
+                    "Tanggal/Waktu": "Senin, 13 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "Cleavland vs Spurs",
+                    "Kategori": "Putri",
+                    "Tanggal/Waktu": "Selasa, 14 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "Kings vs Bulls",
+                    "Kategori": "Putra",
+                    "Tanggal/Waktu": "Rabu, 15 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "Cealtic vs Nugget",
+                    "Kategori": "Putra",
+                    "Tanggal/Waktu": "Kamis, 16 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "Raptors vs Magic",
+                    "Kategori": "Putri",
+                    "Tanggal/Waktu": "Jumat, 17 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                }
+            ]
+        },
+        {
+            "Nama Kategori": "Voli",
+            "Jadwal": [
+                {
+                    "Pertandingan": "Surabaya Samator vs Jakarta BNI 46",
+                    "Kategori": "Putra",
+                    "Tanggal/Waktu": "Senin, 13 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "Bandung Tandamata vs Jakarta Fastron",
+                    "Kategori": "Putri",
+                    "Tanggal/Waktu": "Selasa, 14 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "Jakarta LavAni vs Jakarta Presisi",
+                    "Kategori": "Putra",
+                    "Tanggal/Waktu": "Rabu, 15 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "Surabaya Bank Jatim vs Gresik Petrokimia",
+                    "Kategori": "Putri",
+                    "Tanggal/Waktu": "Kamis, 16 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "Jakarta BIN vs Jakarta Electric PLN",
+                    "Kategori": "Putri",
+                    "Tanggal/Waktu": "Jumat, 17 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                }
+            ]
+        },
+        {
+            "Nama Kategori": "Futsal",
+            "Jadwal": [
+                {
+                    "Pertandingan": "UPI Bandung vs Kebumen United FC",
+                    "Kategori": "Putri",
+                    "Tanggal/Waktu": "Senin, 13 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "IPC Pelindo II FC vs Kancil BBK",
+                    "Kategori": "Putra",
+                    "Tanggal/Waktu": "Selasa, 14 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "Sadakata FC vs Pendekar United",
+                    "Kategori": "Putra",
+                    "Tanggal/Waktu": "Rabu, 15 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "Cosmo JNE FC vs Vamos FC",
+                    "Kategori": "Putra",
+                    "Tanggal/Waktu": "Kamis, 16 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                },
+                {
+                    "Pertandingan": "Female FC Balikpapan vs Pusaka FC Kendal",
+                    "Kategori": "Putri",
+                    "Tanggal/Waktu": "Jumat, 17 Januari 2025",
+                    "Harga Tiket Ekonomi": 100000,
+                    "Harga Tiket VIP": 200000
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,139 @@
+
+========================================
+       STRUK PEMBELIAN TIKET SPORTFEST
+========================================
+No. Invoice   : 1d296cc1
+Tanggal       : 2024-11-08 10:24:32
+Nama Pembeli  : 1
+========================================
+Pertandingan  : Borneo FC vs Madura FC
+Kategori      : U20
+Tanggal/Waktu : Selasa, 24 Desember 2024
+========================================
+Jenis Tiket   : Ekonomi
+Jumlah Tiket  : 1
+Harga Satuan  : Rp 100,000
+Total Harga   : Rp 100,000
+========================================
+    Terima kasih atas pembelian Anda!
+========================================
+
+========================================
+       STRUK PEMBELIAN TIKET SPORTFEST
+========================================
+No. Invoice   : 96913d1c
+Tanggal       : 2024-11-08 10:33:34
+Nama Pembeli  : 1
+========================================
+Pertandingan  : Borneo FC vs Madura FC
+Kategori      : U20
+Tanggal/Waktu : Selasa, 24 Desember 2024
+========================================
+Jenis Tiket   : VIP
+Jumlah Tiket  : 1
+Harga Satuan  : Rp 200,000
+Total Harga   : Rp 200,000
+========================================
+    Terima kasih atas pembelian Anda!
+========================================
+
+
+========================================
+       STRUK PEMBELIAN TIKET SPORTFEST
+========================================
+No. Invoice   : 1bc3cbb2
+Tanggal       : 2024-11-08 16:20:35
+Nama Pembeli  : test
+========================================
+Pertandingan  : Borneo FC vs Madura FC
+Kategori      : U20
+Tanggal/Waktu : Selasa, 24 Desember 2024
+========================================
+Jenis Tiket   : VIP
+Jumlah Tiket  : 2
+Harga Satuan  : Rp 200,000
+Total Harga   : Rp 400,000
+========================================
+    Terima kasih atas pembelian Anda!
+========================================
+
+
+========================================
+       STRUK PEMBELIAN TIKET SPORTFEST
+========================================
+No. Invoice   : 0497bdd8
+Tanggal       : 2024-11-09 05:26:36
+Nama Pembeli  : 1
+========================================
+Pertandingan  : Borneo FC vs Madura FC
+Kategori      : U20
+Tanggal/Waktu : Selasa, 24 Desember 2024
+========================================
+Jenis Tiket   : VIP
+Jumlah Tiket  : 3
+Harga Satuan  : Rp 200,000
+Total Harga   : Rp 600,000
+========================================
+    Terima kasih atas pembelian Anda!
+========================================
+
+
+========================================
+       STRUK PEMBELIAN TIKET SPORTFEST
+========================================
+No. Invoice   : 6d75c84a
+Tanggal       : 2024-11-09 05:36:43
+Nama Pembeli  : 1
+========================================
+Pertandingan  : Borneo FC vs Madura FC
+Kategori      : U20
+Tanggal/Waktu : Selasa, 24 Desember 2024
+========================================
+Jenis Tiket   : VIP
+Jumlah Tiket  : 3
+Harga Satuan  : Rp 200,000
+Total Harga   : Rp 600,000
+========================================
+    Terima kasih atas pembelian Anda!
+========================================
+
+
+========================================
+       STRUK PEMBELIAN TIKET SPORTFEST
+========================================
+No. Invoice   : 4a7d7999
+Tanggal       : 2024-11-09 05:56:03
+Nama Pembeli  : 1
+========================================
+Pertandingan  : Borneo FC vs Madura FC
+Kategori      : U20
+Tanggal/Waktu : Selasa, 24 Desember 2024
+========================================
+Jenis Tiket   : VIP
+Jumlah Tiket  : 3
+Harga Satuan  : Rp 200,000
+Total Harga   : Rp 600,000
+========================================
+    Terima kasih atas pembelian Anda!
+========================================
+
+
+========================================
+       STRUK PEMBELIAN TIKET SPORTFEST
+========================================
+No. Invoice   : 9694ba0d
+Tanggal       : 2024-11-09 06:25:14
+Nama Pembeli  : 1
+========================================
+Pertandingan  : Borneo FC vs Madura FC
+Kategori      : U20
+Tanggal/Waktu : Selasa, 24 Desember 2024
+========================================
+Jenis Tiket   : VIP
+Jumlah Tiket  : 4
+Harga Satuan  : Rp 200,000
+Total Harga   : Rp 800,000
+========================================
+    Terima kasih atas pembelian Anda!
+========================================
+
