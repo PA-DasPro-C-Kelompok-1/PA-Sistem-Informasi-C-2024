@@ -626,6 +626,7 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
                f"Rp{pertandingan['Harga Tiket VIP']:,}"
            ])
        print(tabel)
+   
    ```
 
 ### Fitur Admin
@@ -634,6 +635,7 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 <br/>
 
    ```python
+   
       def create():
        os.system("cls")
        while True:
