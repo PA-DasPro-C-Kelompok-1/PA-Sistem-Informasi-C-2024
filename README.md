@@ -1,5 +1,16 @@
 # 🏟️ SportFest: Sistem Pembelian Tiket Olahraga
 
+## Disusun Oleh :
+
+<br/>
+
+Muhammad Fakhri Al-Kautsar:	(2409116081)
+Raihan Fariz Novanto:			(2409116083)
+Moreno Ferdinand Farhantino:	(2409116097)
+Ahmad Samsul Arifin:			(2409116113)
+
+<br/>
+
 ## 📋 Daftar Isi
 - [Flowchart](#Flowchart)
 - [Pendahuluan](#pendahuluan)
@@ -112,6 +123,7 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
     <br/>
     
 1. **Pembelian Tiket**
+   
    - Pilih cabang olahraga
      
     <br/>
@@ -411,7 +423,7 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
       
     <br/>
     
-2. **Fitur Tambahan**
+3. **Fitur Tambahan**
    
    - Top up saldo
      
@@ -547,9 +559,9 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 
 <br/>
 
-   - Pencarian tiket
+- Pencarian tiket
      
-   <br/>
+<br/>
    
    ```python
       def cari5():
@@ -647,7 +659,7 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 
 3. **Manajemen Tiket**
    
-   - Tambah tiket baru
+- Tambah tiket baru
      
 <br/>
 
@@ -748,7 +760,7 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 
 - Update informasi tiket
   
-  <br/>
+<br/>
 
    ```python
       def update():
@@ -878,9 +890,9 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 
 <br/>
 
-   - Hapus tiket
+- Hapus tiket
      
-   <br/>
+<br/>
 
    ```python
          def delete():
@@ -1003,10 +1015,10 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 <br/>
    
 4. **Manajemen Jadwal**
-   
-   - Lihat jadwal pertandingan
+
+- Lihat jadwal pertandingan
      
-     <br/>
+  <br/>
      
      ```python
      def bola():
@@ -1096,7 +1108,7 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
      ```
      <br/>
      
-   - Cari tiket
+- Cari tiket
      
      <br/>
      
@@ -1149,7 +1161,7 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
      ```
      <br/>
      
-   - Sorting tiket
+- Sorting tiket
      
      <br/>
      
@@ -1195,6 +1207,8 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
   - datetime
 
 ## 📋 Contoh Output User
+
+<br/>
 
 ### 1. Halaman Utama
 
@@ -1354,8 +1368,319 @@ Masukkan pilihan nominal (1-6):
 
 <br/>
 
-## Output Contoh Admin
+### 10. Pencarian Tiket
 
-```bash
-git clone https://github.com/rai269/sportfest.git
-cd sportfest
+<br/>
+
+```
++=================================+
+|            CARI TIKET           |
++=================================+
+Masukkan kata kunci pencarian: bola
+
+Hasil Pencarian:
++----------+-------------------+------+-------------------+---------------+-------------+
+| Kategori | Pertandingan      | Jenis| Waktu             | Tiket Ekonomi | Tiket VIP   |
++----------+-------------------+------+-------------------+---------------+-------------+
+| Bola     | Persib vs Persija | Liga | 20 Des 2023 19:00 | Rp 50,000     | Rp 150,000  |
++----------+-------------------+------+-------------------+---------------+-------------+
+```
+
+<br/>
+
+### 11. Lihat Saldo E-Money
+
+<br/>
+
+```
+=========================================
+SALDO ANDA ADALAH Rp 20,600,000
+=========================================
+```
+
+<br/>
+
+### 12. Tampilkan Tiket
+
+<br/>
+
+```
++-------------------------------------------------------------------------------------------------------------------------+
+|                                                    PERTANDINGAN BOLA                                                    |
++-----+-------------------------------------+----------+--------------------------+---------------------+-----------------+
+|  No |             Pertandingan            | Kategori |          Waktu           | Harga Tiket Ekonomi | Harga Tiket VIP |
++-----+-------------------------------------+----------+--------------------------+---------------------+-----------------+
+| [1] |        Borneo FC vs Madura FC       |   U20    | Selasa, 24 Desember 2024 |      Rp100,000      |    Rp200,000    |
+| [2] |     Arema FC vs Persija Jakarta     |   U17    |  Rabu, 25 Desember 2024  |      Rp100,000      |    Rp200,000    |
+| [3] |    Persebaya Surabaya vs Persipa    |  Senior  | Jumat, 27 Desember 2024  |      Rp100,000      |    Rp200,000    |
+| [4] | Jabbar FC vs Jomok (Jowo Mojokerto) |   U70    |      69 April 2069       |     Rp50,000,000    |  Rp150,000,000  |
+| [5] |         Rehan FC vs Kadal FC        |  U1945   |      w1324235324532      |      Rp120,000      |    Rp300,000    |
+| [6] |            kocak vs kocak           |   U90    |     27 Agustus 1201      |      Rp120,000      |    Rp220,000    |
+| [7] |                kocak                |  kocak   |          kocak           |        Rp123        |      Rp123      |
++-----+-------------------------------------+----------+--------------------------+---------------------+-----------------+
+ 
++=======================================================================================================================+
+ 
++-----------------------------------------------------------------------------------------------------------------------+
+|                                                 PERTANDINGAN BADMINTON                                                |
++-----+--------------------------------+----------------+-----------------------+---------------------+-----------------+
+|  No |          Pertandingan          |    Kategori    |         Waktu         | Harga Tiket Ekonomi | Harga Tiket VIP |
++-----+--------------------------------+----------------+-----------------------+---------------------+-----------------+
+| [1] |         Rehan vs Fakri         | Tunggal Putra  |  Rabu, 1 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [2] |        Furina vs Hu Tao        | Tunggal Putri  | Kamis, 2 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [3] |  Samsul-Moreno vs Aris-Zyrus   |  Ganda Putra   | Jumat, 3 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [4] | Noelle-Stelle vs Anita-Makswin |  Ganda Putri   | Sabtu, 4 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [5] |         Idsur vs Rusdi         | Jowo Mojokerto |    31 Februari 1965   |     Rp40,000,000    |   Rp60,000,000  |
++-----+--------------------------------+----------------+-----------------------+---------------------+-----------------+
+
++=======================================================================================================================+
+
++------------------------------------------------------------------------------------------------------------+
+|                                            PERTANDINGAN BASKET                                             |
++-----+-------------------------+----------+-------------------------+---------------------+-----------------+
+|  No |       Pertandingan      | Kategori |          Waktu          | Harga Tiket Ekonomi | Harga Tiket VIP |
++-----+-------------------------+----------+-------------------------+---------------------+-----------------+
+| [1] | Leakers vs Golden State |  Putra   |  Senin, 13 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [2] |    Cleavland vs Spurs   |  Putri   | Selasa, 14 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [3] |      Kings vs Bulls     |  Putra   |  Rabu, 15 Januari 2025  |      Rp100,000      |    Rp200,000    |
+| [4] |    Cealtic vs Nugget    |  Putra   |  Kamis, 16 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [5] |     Raptors vs Magic    |  Putri   |  Jumat, 17 Januari 2025 |      Rp100,000      |    Rp200,000    |
++-----+-------------------------+----------+-------------------------+---------------------+-----------------+
+
++=======================================================================================================================+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+|                                                      PERTANDINGAN VOLI                                                      |
++-----+------------------------------------------+----------+-------------------------+---------------------+-----------------+
+|  No |               Pertandingan               | Kategori |          Waktu          | Harga Tiket Ekonomi | Harga Tiket VIP |
++-----+------------------------------------------+----------+-------------------------+---------------------+-----------------+
+| [1] |    Surabaya Samator vs Jakarta BNI 46    |  Putra   |  Senin, 13 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [2] |   Bandung Tandamata vs Jakarta Fastron   |  Putri   | Selasa, 14 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [3] |    Jakarta LavAni vs Jakarta Presisi     |  Putra   |  Rabu, 15 Januari 2025  |      Rp100,000      |    Rp200,000    |
+| [4] | Surabaya Bank Jatim vs Gresik Petrokimia |  Putri   |  Kamis, 16 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [5] |   Jakarta BIN vs Jakarta Electric PLN    |  Putri   |  Jumat, 17 Januari 2025 |      Rp100,000      |    Rp200,000    |
++-----+------------------------------------------+----------+-------------------------+---------------------+-----------------+
+
++=======================================================================================================================+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+|                                                     PERTANDINGAN FUTSAL                                                     |
++-----+------------------------------------------+----------+-------------------------+---------------------+-----------------+
+|  No |               Pertandingan               | Kategori |          Waktu          | Harga Tiket Ekonomi | Harga Tiket VIP |
++-----+------------------------------------------+----------+-------------------------+---------------------+-----------------+
+| [1] |     UPI Bandung vs Kebumen United FC     |  Putri   |  Senin, 13 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [2] |     IPC Pelindo II FC vs Kancil BBK      |  Putra   | Selasa, 14 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [3] |      Sadakata FC vs Pendekar United      |  Putra   |  Rabu, 15 Januari 2025  |      Rp100,000      |    Rp200,000    |
+| [4] |         Cosmo JNE FC vs Vamos FC         |  Putra   |  Kamis, 16 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [5] | Female FC Balikpapan vs Pusaka FC Kendal |  Putri   |  Jumat, 17 Januari 2025 |      Rp100,000      |    Rp200,000    |
++-----+------------------------------------------+----------+-------------------------+---------------------+-----------------+
+```
+
+## 📖 Contoh Output Admin
+
+### 1. Login Admin
+
+<br/>
+
+```
+Masukkan username Anda: RehanGokil
+Masukkan Password Anda: **********
+```
+
+<br/>
+
+### 2. Ucapan Selamat Datang
+
+<br/>
+
+```
++===============================================+
+|             SELAMAT DATANG ADMIN              |
++===============================================+
+```
+
+<br/>
+
+### 3. Menu Utama Admin
+
+<br/>
+
+```
++--------------------+
+|   PILIHAN ADMIN    |
++-----+--------------+
+|  NO |   PILIHAN    |
++-----+--------------+
+| [1] |  Menu Tiket  |
+| [2] | Tambah Tiket |
+| [3] | Update Tiket |
+| [4] | Hapus Tiket  |
+| [5] |    Keluar    |
++-----+--------------+
+```
+
+<br/>
+
+### 4. Tambah Pertandingan
+
+<br/>
+
+```
++===========================================+
+|       TAMBAH JADWAL PERTANDINGAN          |
++===========================================+
+Pilih Kategori Olahraga:
+[1] Bola
+[2] Badminton
+[3] Basket
+[4] Voli
+[5] Futsal
+
+Masukkan detail pertandingan:
+Nama Pertandingan: Indonesia vs Thailand
+Kategori: Piala
+Tanggal/Waktu: 20 Desember 2023 - 19:00
+Harga Tiket Ekonomi: 50000
+Harga Tiket VIP: 150000
+
+Jadwal berhasil ditambahkan!
+```
+
+<br/>
+
+### 5. Update Jadwal Pertandingan
+
+<br/>
+
+```
++===========================================+
+|       UBAH JADWAL PERTANDINGAN            |
++===========================================+
+Pilih Kategori Olahraga:
+[1] Bola
+[2] Badminton
+[3] Basket
+[4] Voli
+[5] Futsal
+
+Daftar Pertandingan Bola:
+[1] Indonesia vs Thailand
+[2] Persib vs Persija
+
+Pilih nomor pertandingan yang akan diubah: 1
+
+Masukkan data baru:
+Nama Pertandingan: Indonesia vs Malaysia
+Kategori: Persahabatan
+Tanggal/Waktu: 25 Desember 2023 - 20:00
+Harga Tiket Ekonomi: 75000
+Harga Tiket VIP: 200000
+
+Jadwal berhasil diperbarui!
+```
+
+<br/>
+
+### 6. Hapus Jadwal Pertandingan
+
+<br/>
+
+```
++===========================================+
+|       HAPUS JADWAL PERTANDINGAN           |
++===========================================+
+Pilih Kategori Olahraga:
+[1] Bola
+[2] Badminton
+[3] Basket
+[4] Voli
+[5] Futsal
+
+Daftar Pertandingan Bola:
+[1] Indonesia vs Thailand
+[2] Persib vs Persija
+
+Masukkan nomor pertandingan yang akan dihapus: 1
+
+Paket Indonesia vs Thailand telah dihapus
+```
+
+<br/>
+
+### 7. Lihat Jadwal Pertandingan
+
+<br/>
+
+```
++-------------------------------------------------------------------------------------------------------------------------+
+|                                                    PERTANDINGAN BOLA                                                    |
++-----+-------------------------------------+----------+--------------------------+---------------------+-----------------+
+|  No |             Pertandingan            | Kategori |          Waktu           | Harga Tiket Ekonomi | Harga Tiket VIP |
++-----+-------------------------------------+----------+--------------------------+---------------------+-----------------+
+| [1] |        Borneo FC vs Madura FC       |   U20    | Selasa, 24 Desember 2024 |      Rp100,000      |    Rp200,000    |
+| [2] |     Arema FC vs Persija Jakarta     |   U17    |  Rabu, 25 Desember 2024  |      Rp100,000      |    Rp200,000    |
+| [3] |    Persebaya Surabaya vs Persipa    |  Senior  | Jumat, 27 Desember 2024  |      Rp100,000      |    Rp200,000    |
+| [4] | Jabbar FC vs Jomok (Jowo Mojokerto) |   U70    |      69 April 2069       |     Rp50,000,000    |  Rp150,000,000  |
+| [5] |         Rehan FC vs Kadal FC        |  U1945   |      w1324235324532      |      Rp120,000      |    Rp300,000    |
+| [6] |            kocak vs kocak           |   U90    |     27 Agustus 1201      |      Rp120,000      |    Rp220,000    |
+| [7] |                kocak                |  kocak   |          kocak           |        Rp123        |      Rp123      |
++-----+-------------------------------------+----------+--------------------------+---------------------+-----------------+
+ 
++=======================================================================================================================+
+ 
++-----------------------------------------------------------------------------------------------------------------------+
+|                                                 PERTANDINGAN BADMINTON                                                |
++-----+--------------------------------+----------------+-----------------------+---------------------+-----------------+
+|  No |          Pertandingan          |    Kategori    |         Waktu         | Harga Tiket Ekonomi | Harga Tiket VIP |
++-----+--------------------------------+----------------+-----------------------+---------------------+-----------------+
+| [1] |         Rehan vs Fakri         | Tunggal Putra  |  Rabu, 1 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [2] |        Furina vs Hu Tao        | Tunggal Putri  | Kamis, 2 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [3] |  Samsul-Moreno vs Aris-Zyrus   |  Ganda Putra   | Jumat, 3 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [4] | Noelle-Stelle vs Anita-Makswin |  Ganda Putri   | Sabtu, 4 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [5] |         Idsur vs Rusdi         | Jowo Mojokerto |    31 Februari 1965   |     Rp40,000,000    |   Rp60,000,000  |
++-----+--------------------------------+----------------+-----------------------+---------------------+-----------------+
+
++=======================================================================================================================+
+
++------------------------------------------------------------------------------------------------------------+
+|                                            PERTANDINGAN BASKET                                             |
++-----+-------------------------+----------+-------------------------+---------------------+-----------------+
+|  No |       Pertandingan      | Kategori |          Waktu          | Harga Tiket Ekonomi | Harga Tiket VIP |
++-----+-------------------------+----------+-------------------------+---------------------+-----------------+
+| [1] | Leakers vs Golden State |  Putra   |  Senin, 13 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [2] |    Cleavland vs Spurs   |  Putri   | Selasa, 14 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [3] |      Kings vs Bulls     |  Putra   |  Rabu, 15 Januari 2025  |      Rp100,000      |    Rp200,000    |
+| [4] |    Cealtic vs Nugget    |  Putra   |  Kamis, 16 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [5] |     Raptors vs Magic    |  Putri   |  Jumat, 17 Januari 2025 |      Rp100,000      |    Rp200,000    |
++-----+-------------------------+----------+-------------------------+---------------------+-----------------+
+
++=======================================================================================================================+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+|                                                      PERTANDINGAN VOLI                                                      |
++-----+------------------------------------------+----------+-------------------------+---------------------+-----------------+
+|  No |               Pertandingan               | Kategori |          Waktu          | Harga Tiket Ekonomi | Harga Tiket VIP |
++-----+------------------------------------------+----------+-------------------------+---------------------+-----------------+
+| [1] |    Surabaya Samator vs Jakarta BNI 46    |  Putra   |  Senin, 13 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [2] |   Bandung Tandamata vs Jakarta Fastron   |  Putri   | Selasa, 14 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [3] |    Jakarta LavAni vs Jakarta Presisi     |  Putra   |  Rabu, 15 Januari 2025  |      Rp100,000      |    Rp200,000    |
+| [4] | Surabaya Bank Jatim vs Gresik Petrokimia |  Putri   |  Kamis, 16 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [5] |   Jakarta BIN vs Jakarta Electric PLN    |  Putri   |  Jumat, 17 Januari 2025 |      Rp100,000      |    Rp200,000    |
++-----+------------------------------------------+----------+-------------------------+---------------------+-----------------+
+
++=======================================================================================================================+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+|                                                     PERTANDINGAN FUTSAL                                                     |
++-----+------------------------------------------+----------+-------------------------+---------------------+-----------------+
+|  No |               Pertandingan               | Kategori |          Waktu          | Harga Tiket Ekonomi | Harga Tiket VIP |
++-----+------------------------------------------+----------+-------------------------+---------------------+-----------------+
+| [1] |     UPI Bandung vs Kebumen United FC     |  Putri   |  Senin, 13 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [2] |     IPC Pelindo II FC vs Kancil BBK      |  Putra   | Selasa, 14 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [3] |      Sadakata FC vs Pendekar United      |  Putra   |  Rabu, 15 Januari 2025  |      Rp100,000      |    Rp200,000    |
+| [4] |         Cosmo JNE FC vs Vamos FC         |  Putra   |  Kamis, 16 Januari 2025 |      Rp100,000      |    Rp200,000    |
+| [5] | Female FC Balikpapan vs Pusaka FC Kendal |  Putri   |  Jumat, 17 Januari 2025 |      Rp100,000      |    Rp200,000    |
++-----+------------------------------------------+----------+-------------------------+---------------------+-----------------+
+```
+
+<br/>
