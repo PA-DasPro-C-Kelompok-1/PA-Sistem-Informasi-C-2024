@@ -343,6 +343,65 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 
 
    - Generate invoice
+  
+
+     ```python
+     def generate_invoice(username, pertandingan, jenis_tiket, jumlah_tiket, total_harga):
+       try:
+           # Validasi input
+           if not all([username, pertandingan, jenis_tiket, jumlah_tiket, total_harga]):
+               print("Error: Data tidak lengkap")
+               return False
+
+        # Validasi tipe data
+        if not isinstance(jumlah_tiket, int) or jumlah_tiket <= 0:
+            print("Error: Jumlah tiket harus bilangan bulat positif")
+            return False
+
+        if not isinstance(total_harga, (int, float)) or total_harga <= 0:
+            print("Error: Total harga harus bilangan positif")
+            return False
+
+        invoice_id = str(uuid.uuid4())[:8]
+        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        invoice_content = f"""
+         {'='*40}
+                STRUK PEMBELIAN TIKET SPORTFEST
+         {'='*40}
+         No. Invoice   : {invoice_id}
+         Tanggal       : {current_time}
+         Nama Pembeli  : {username}
+         {'='*40}
+         Pertandingan  : {pertandingan.get('Pertandingan', 'Tidak Diketahui')}
+         Kategori      : {pertandingan.get('Kategori', 'Tidak Diketahui')}
+         Tanggal/Waktu : {pertandingan.get('Tanggal/Waktu', 'Tidak Diketahui')}
+         {'='*40}
+         Jenis Tiket   : {jenis_tiket}
+         Jumlah Tiket  : {jumlah_tiket}
+         Harga Satuan  : Rp {pertandingan.get(f'Harga Tiket {jenis_tiket.replace(" ", "")}', 0):,}
+         Total Harga   : Rp {total_harga:,}
+         {'='*40}
+             Terima kasih atas pembelian Anda!
+         {'='*40}
+         """
+                 print(invoice_content)
+
+        struk_path = os.path.join(os.path.dirname(__file__), 'struk.txt')
+
+        with open(struk_path, 'a', encoding='utf-8') as file:
+            file.write(invoice_content + "\n")
+        
+        print(f"\nStruk telah disimpan di {struk_path}")
+        return True
+    
+       except Exception as e:
+           print(f"Gagal membuat struk: {e}")
+           import traceback
+           traceback.print_exc()
+           return False
+      ```
+   
 
 1. **Fitur Tambahan**
    - Top up saldo
