@@ -543,12 +543,14 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
                print(f"Terjadi kesalahan: {str(e)}")
 
 
-      ```
+   ```
 
-
+<br/>
 
    - Pencarian tiket
+     
    <br/>
+   
    ```python
       def cari5():
           os.system("cls")
@@ -602,7 +604,8 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
    ```
 
  <br/>
-   - Sorting tiket
+ 
+- Sorting tiket
      
  <br/>
  
