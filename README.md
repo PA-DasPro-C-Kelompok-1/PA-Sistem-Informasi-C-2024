@@ -1,6 +1,7 @@
 # 🏟️ SportFest: Sistem Pembelian Tiket Olahraga
 
 ## 📋 Daftar Isi
+- [Flowchart] (#Flowchart)
 - [Pendahuluan](#pendahuluan)
 - [Fitur](#fitur)
 - [Persyaratan Sistem](#persyaratan-sistem)
