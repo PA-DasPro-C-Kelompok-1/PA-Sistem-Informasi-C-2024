@@ -405,8 +405,195 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 
 1. **Fitur Tambahan**
    - Top up saldo
+
+
+
+   ```python
+         def topUp4():
+          while True:
+              os.system("cls")
+              if 'username' not in globals():
+                  print("Silakan login terlebih dahulu!")
+                  return
+                  
+              print("+=================================+")
+              print("|          TOP UP SALDO           |")
+              print("+=================================+")
+              users = loadDataUser()
+              tabel = PrettyTable()
+              tabel.clear_rows()
+              tabel.title = "====TOP UP SALDO===="
+              tabel.field_names = ["NO", "PILIHAN"]
+              tabel.add_row(["[1]", "Rp 50.000"])
+              tabel.add_row(["[2]", "Rp 100.000"])
+              tabel.add_row(["[3]", "Rp 500.000"])
+              tabel.add_row(["[4]", "Rp 1.000.000"])
+              tabel.add_row(["[5]", "Rp 10.000.000"])
+              tabel.add_row(["[6]", "Kembali"])
+              print(tabel)
+              
+              try:
+                  pilihan = int(input("Masukkan pilihan nominal (1-6): "))
+                  
+                  nominal = [50000, 100000, 500000, 1000000, 10000000]
+                  
+                  if 1 <= pilihan <= 5:
+                      user_found = False
+                      for user in users:
+                          if user["Nama User"] == username:
+                              user_found = True
+                              konfirmasi = input(f"Anda akan top up sebesar Rp {nominal[pilihan-1]:,}. Lanjutkan? (y/n): ")
+                              if konfirmasi.lower() == 'y':
+                                  user["Saldo"] += nominal[pilihan - 1]
+                                  savedataUser(users)
+                                  print(f"Top up berhasil!")
+                                  print("=====================================================")
+                                  print(f"Saldo anda sekarang adalah Rp {user['Saldo']:,}")
+                                  print("-----------------------------------------------------")
+                                  print("                   1. Top Up lagi                    ")
+                                  print("                    2. Kembali                       ")
+                                  print("=====================================================")
+                                  pilihan2 = int(input("Masukkan pilihan: "))
+                                  if pilihan2 == 1:
+                                      topUp4()
+                                  elif pilihan2 == 2:
+                                      menu_pelanggan()
+                                  else:
+                                      print("pilihan anda tidak valid atau tidak ada di menu")
+                              else:
+                                  print("Top up dibatalkan")
+                              break
+                      
+                      if not user_found:
+                          print("Error: User tidak ditemukan")
+                          
+                  elif pilihan == 6:
+                      menu_pelanggan()
+                  else:
+                      print("Pilihan anda tidak tersedia")
+                      
+              except (ValueError):
+                  print("\n Mohon masukkan data yang valid")
+              except KeyboardInterrupt:
+                  print("jangan tekan ctrl + C!")
+      
+              except Exception as e:
+                  print(f"Terjadi kesalahan: {str(e)}")
+
+
+      ```
    - Lihat saldo E-Money
+
+
+
+   ```python
+      def lihatSaldo3():
+       while True:
+           try:
+               os.system("cls")
+               if 'username' not in globals():
+                   print("Silakan login terlebih dahulu!")
+                   return
+                   
+               try:
+                   users = loadDataUser()
+                   user_found = False
+                   
+                   for user in users:
+                       if user["Nama User"] == username:
+                           user_found = True
+                           saldo = user["Saldo"]
+                           print("=========================================")
+                           print(     f"SALDO ANDA ADALAH Rp {saldo:,} ")
+                           print("=========================================")
+   
+                           print("\n==========================================")
+                           print("         1. Ingin menambahkan saldo?")
+                           print("                 2. Kembali")
+                           print("==========================================")
+   
+                           pilihan = int(input("Masukkan pilihan 1/2: "))
+                           if pilihan == 1:
+                               topUp4()
+                           elif pilihan == 2:
+                               menu_pelanggan()
+                           else:
+                               print("Nomor pilihan tidak valid")
+                           break
+                           
+                   if not user_found:
+                       print("Error: User tidak ditemukan")
+                       
+               except(ValueError):
+                   print("\n Mohon masukkan data yang valid")
+               except KeyboardInterrupt:
+                   print("jangan tekan ctrl + C!")
+   
+           except Exception as e:
+               print(f"Terjadi kesalahan: {str(e)}")
+
+
+      ```
+
+
+
    - Pencarian tiket
+  
+
+   ```python
+      def cari5():
+          os.system("cls")
+          print("\n+=================================+")
+          print("|            CARI TIKET           |")
+          print("+=================================+")
+          
+       try:
+           keyword = input("Masukkan kata kunci pencarian: ").lower()
+           
+           found = False
+           table = PrettyTable()
+           table.field_names = ["Kategori", "Pertandingan", "Jenis", "Waktu", "Tiket Ekonomi", "Tiket VIP"]
+           
+           for kategori in data['Kategori']:
+               kategori_nama = kategori['Nama Kategori']
+               for jadwal in kategori['Jadwal']:
+                   # Mencari berdasarkan nama kategori atau nama pertandingan
+                   if (keyword in kategori_nama.lower() or 
+                       keyword in jadwal['Pertandingan'].lower()):
+                       table.add_row([
+                           kategori_nama,
+                           jadwal['Pertandingan'],
+                           jadwal['Kategori'],
+                           jadwal['Tanggal/Waktu'],
+                           f"Rp {jadwal['Harga Tiket Ekonomi']:,}",
+                           f"Rp {jadwal['Harga Tiket VIP']:,}"
+                       ])
+                       found = True
+           
+           if found:
+               print("\nHasil Pencarian:")
+               print(table)
+           else:
+               print("\nTidak ditemukan hasil yang cocok dengan kata kunci pencarian.")
+   
+              
+           pilihan = input("\ningin mencari lagi? (y/n): ")
+           if pilihan == "y":
+               cari5()
+           elif pilihan == "n":
+               menu_pelanggan()
+           
+       except (ValueError):
+               print("\n Mohon masukkan data yang valid!")
+       except KeyboardInterrupt:
+               print("jangan tekan ctrl + C!")
+   
+       except Exception as e:
+           print(f"\nTerjadi kesalahan: {str(e)}"))
+   ```
+
+
+
    - Sorting tiket
 
 ### Fitur Admin
