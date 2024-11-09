@@ -32,119 +32,100 @@
 
 ## 💫 Flowchart
 
-SELURUH FLOWCHART
+# Panduan Aplikasi Tiket Sportfest
 
-![WhatsApp Image 2024-11-09 at 21 13 51](https://github.com/user-attachments/assets/0863ca36-bfbb-4c90-9b0e-0b9de82dfb15)
+## SELURUH FLOWCHART
 
-![WhatsApp Image 2024-11-09 at 21 14 07](https://github.com/user-attachments/assets/a6a9c6fa-29ea-4106-bd7f-807f5a88b3f4)
+![Flowchart 1](https://github.com/user-attachments/assets/0863ca36-bfbb-4c90-9b0e-0b9de82dfb15)
+![Flowchart 2](https://github.com/user-attachments/assets/a6a9c6fa-29ea-4106-bd7f-807f5a88b3f4)
+![Flowchart 3](https://github.com/user-attachments/assets/45cb501b-cfef-4730-a41b-22cc61366a4a)
 
-![WhatsApp Image 2024-11-09 at 21 13 55](https://github.com/user-attachments/assets/45cb501b-cfef-4730-a41b-22cc61366a4a)
+## BAGIAN PILIHAN (MENU PALING AWAL)
 
+![Menu Awal](https://github.com/user-attachments/assets/a0cebd2b-f9f1-49c9-8c38-3a1b5b503d37)
 
-### BAGIAN PILIHAN(MENU PALING AWAL)
+1. **Pilihan Menu**: Pada awal aplikasi, terdapat 4 pilihan menu:
+   - **1. Register**: Melakukan registrasi dengan memasukkan username dan password. Jika berhasil, akan muncul output "Register Anda berhasil".
+   - **2. Login User**: Memasukkan username dan password. Jika berhasil, akan muncul output "Login berhasil, selamat datang (nama)".
+   - **3. Login Admin**: Memasukkan username dan password. Jika berhasil, akan muncul output "Login berhasil, selamat datang".
+   - **4. Keluar**: Menutup program.
 
-![WhatsApp Image 2024-11-09 at 19 41 44](https://github.com/user-attachments/assets/a0cebd2b-f9f1-49c9-8c38-3a1b5b503d37)
+![Register](https://github.com/user-attachments/assets/2186d130-dcc7-46e5-b6de-0caaa47ee1f2)
+![Login User](https://github.com/user-attachments/assets/15314ce6-8a47-4dc5-86ea-e12c305e0c83)
+![Login Admin](https://github.com/user-attachments/assets/d960b96c-3ca5-4b66-a1a5-236f4ba43d40)
+![Keluar](https://github.com/user-attachments/assets/56435297-c173-4328-b092-9f535df26f42)
 
-1. Pada awal Mulai, akan ada 4 pilihan menu, diantaranya pilihan 1. register, 2.login user, 3.login admin, 4.keluar. Jika memilih pilihan 1, maka akan melakukan register dengan tahapan memasukkan username dan memasukkan password. JIka username dan password tidak sesuai, maka akan kembali ke masukkan username dan password. Lalu, jika berhasil, maka akan keluar output(register anda berhasil.
+2. **Error Handling**: Jika salah memilih pilihan atau memasukkan angka yang tidak sesuai, akan muncul pesan error.
 
-![WhatsApp Image 2024-11-09 at 19 41 47](https://github.com/user-attachments/assets/2186d130-dcc7-46e5-b6de-0caaa47ee1f2)
+## BAGIAN PEMBELI
 
-2. Pada pilihan 2, akan melakukan login user dengan tahapan memasukkan username da password, lalu data tersebut akan tersimpan di data pengguna, lalu jika username atau password tidak sesuai, maka akan kembali masukkan username dan password ulang. Tetapi jika berhasil, maka akan keluar output"login berhasil, selamat datang(nama).
+### Tampilkan User
 
-![WhatsApp Image 2024-11-09 at 19 56 38](https://github.com/user-attachments/assets/15314ce6-8a47-4dc5-86ea-e12c305e0c83)
+![Menu Pembeli](https://github.com/user-attachments/assets/baa64ef3-c686-40f7-8e31-b7dc855f347f)
 
-4. Pada pilihan 3, akan melakukan login admin dengan tahapan memasukan userrname dan password, lalu data data tersebut juga akan terrsimpan di data pengguna, lalu jika username atau passwprd tidak sesuai, maka akan kembali memasukkan ulang username dan password. Tetapi jika berhasio, maka akan keluar output"login berhasil, selamat datang".
+1. Setelah login, pengguna akan diarahkan ke menu baru dengan 5 pilihan:
+   - **1. Beli Tiket**
+   - **2. Daftar Tiket**
+   - **3. Tambah Saldo**
+   - **4. Cek Saldo**
+   - **5. Keluar**
 
-![WhatsApp Image 2024-11-09 at 20 07 41](https://github.com/user-attachments/assets/d960b96c-3ca5-4b66-a1a5-236f4ba43d40)
+![Menu Pilihan](https://github.com/user-attachments/assets/38018cff-8582-4860-b2a8-5eeed652cdcb)
 
-5. Pada pilihan 4, akan keluar program.
+2. **Beli Tiket**: 
+   - Memilih nomor pertandingan. Jika berhasil, akan menampilkan struk dan kembali ke menu user. Jika memilih pilihan 6, akan langsung kembali ke menu user.
 
-![WhatsApp Image 2024-11-09 at 20 06 05](https://github.com/user-attachments/assets/56435297-c173-4328-b092-9f535df26f42)
+![Beli Tiket](https://github.com/user-attachments/assets/e7c42163-ff80-40e5-823b-132269ace55e)
 
-6. Jika salah memilih pilihan/memilih angka tidak sesuai dari pilihan, maka akan mengalami error.
+3. **Tambah Saldo**: 
+   - Menampilkan pilihan nominal saldo. Jika merasa kurang pas, akan ditanya apakah ingin lanjut. Jika tidak, akan kembali ke menu user.
 
+![Tambah Saldo](https://github.com/user-attachments/assets/009c0e3a-3402-42fe-b55e-951c0ac78117)
 
-### BAGIAN PEMBELI
-TAMPILKAN USER
+4. **Cek Saldo**: 
+   - Memungkinkan pengguna untuk mengecek saldo mereka.
 
-![WhatsApp Image 2024-11-09 at 20 14 50](https://github.com/user-attachments/assets/baa64ef3-c686-40f7-8e31-b7dc855f347f)
+![Cek Saldo](https://github.com/user-attachments/assets/09ef82d8-9ad8-4863-a1ce-18af6fa16702)
 
-1. Pada saat selesai login, maka akan di arahkan ke pilihan baru, dimana pilihan tersebut ada 5, diantaranya pilihan 1.beli tiket, 2. daftar tiket, 3.tambah saldo, 4.cek saldo, dan 5.keluar.
+5. **Cari**: 
+   - Mencari nama olahraga. Jika tidak sesuai, akan kembali ke menu user. Jika berhasil, akan menampilkan jadwal pertandingan.
 
-![WhatsApp Image 2024-11-09 at 20 24 40](https://github.com/user-attachments/assets/38018cff-8582-4860-b2a8-5eeed652cdcb)
+![Cari](https://github.com/user-attachments/assets/e16934f5-a0dc-4e1c-8415-26f7209bde86)
 
-2. Jika pilih 1, maka akan menampilkan tiket, lalu bisa juga mencari tiket pilihan 1, maka akan di arahkan untuk memasukkan nama olahraga yang ingin di cari, lalu jika nama olahraga tersebut tidak ada, maka akan kembali untuk memasukkan nama olahraga lagi. Tetapi jika benar, maka akan menampilkan jadwal pertandingan. Setelah itu, akan ada pilihan mencari tiket lain?jika iya, maka akan kembali melakukan input nama  olahraga.
-
-![WhatsApp Image 2024-11-09 at 20 32 14](https://github.com/user-attachments/assets/09afc42f-6c02-49bd-894d-d34424827a88)
-
-4. Jika pilih 2, maka akan sorting tiket, maka akan menampilkan jadwal pertandingan yang sudah di sortir dan kembali ke menu sebelumnya.
-   
-![WhatsApp Image 2024-11-09 at 20 38 54](https://github.com/user-attachments/assets/81b05468-2587-48bb-96b0-787fa4c062ef)
-
-5. Jika pilih 3, maka akan keluar dan kembali ke menu sebelumnya.
-
-![WhatsApp Image 2024-11-09 at 20 35 26](https://github.com/user-attachments/assets/6dfd2063-69fa-43d0-b505-d090a2709a61)
-
-6. Jika measukkan angka yang tidak sesuai, maka akan kembali memasukkan angka lagi.
-
-
-BELI TIKET
-
-![WhatsApp Image 2024-11-09 at 20 47 15](https://github.com/user-attachments/assets/e7c42163-ff80-40e5-823b-132269ace55e)
-
-1. Jika sudah memilih pilihan kedua, maka akan melakukan beli tiket dan di arahkan untuk memilih no pertandingan, dan jika berhasil, nanti menampilkan struk dan kembali ke menu user. Tetapi jika memilih pilihan 6, maka akan langsung kembali ke menu user juga.
-
-TAMBAH SALDO
-
-![WhatsApp Image 2024-11-09 at 20 58 08](https://github.com/user-attachments/assets/009c0e3a-3402-42fe-b55e-951c0ac78117)
-
-1. Pada pilihan 3, akan melakukan tambah saldo, dimana nanti akan di arahkan langsung menampilkan pilihan nominal saldo, lalu jika merasa kurang pas, maka akan di tanya ingin lanjut?jika tidak, maka akan langsung kembali ke menu user, jika lanjut, maka akan menampilkan saldo sekarang dan ada pilihan untuk menambah saldo lagi atau tidak, jika iya maka akan kembali tambah saldo, jika tidak maka akan keluar dan kembali ke menu user.
-
-
-CEK SALDO
-
-![Screenshot 2024-11-09 211607](https://github.com/user-attachments/assets/09ef82d8-9ad8-4863-a1ce-18af6fa16702)
-
-1.  Pada pilihan 4, untuk mengecek saldo.
-
-
-CARI
-
-![Screenshot 2024-11-09 211951](https://github.com/user-attachments/assets/e16934f5-a0dc-4e1c-8415-26f7209bde86)
-
-1.  Menu 5, adalah untuk mencari nama olahraga, lalu jika nama olahraga tidak sesuai pencarian, maka akan kembali ke menu user, jika berhasil maka akan menampilkan jadwal pertandingan dan kembali ke menu user.
-
-
-KELUAR
-
-1. Pada menu 6 ini, akan keluar dan kembali ke menu paling awal.
-
-
+6. **Keluar**: 
+   - Mengeluarkan pengguna dan kembali ke menu paling awal.
 
 ## BAGIAN ADMIN
 
-![Screenshot 2024-11-09 213105](https://github.com/user-attachments/assets/6ea3181c-0b27-4532-9a1a-3abf9c00a776)
+![Menu Admin](https://github.com/user-attachments/assets/6ea3181c-0b27-4532-9a1a-3abf9c00a776)
 
-1. Pada pilihan menu 3 yaitu admin, nanti setelah selesai login, akan di arahkan ke menu pilihan baru, setelah itu, akan ada 5 pilihan, di antaranya 1.tambah tiket, 2.daftar tiket, 3.update tiket, 4.hapus tiket, dan 5.keluar.
+1. Setelah login sebagai admin, akan diarahkan ke menu pilihan baru dengan 5 pilihan:
+   - **1. Tambah Tiket**
+   - **2. Daftar Tiket**
+   - **3. Update Tiket**
+   - **4. Hapus Tiket**
+   - **5. Keluar**
 
-![Screenshot 2024-11-09 215753](https://github.com/user-attachments/assets/aa57f006-a610-470e-9535-b9bd2844a292)
+![Menu Tambah Tiket](https://github.com/user-attachments/assets/aa57f006-a610-470e-9535-b9bd2844a292)
 
-2. Jika memilih piliham 1 akan menambahkan tiket, setelah itu, pilih pertandingan olahraga. Nanti akan diminta unsuk memasukkan nama pertandingan yang ingin di tambahkan, lalu memasukkan kategori pertandingan, setelah itu, nanti akan membayar tiket yang ekonomi atau tidak? jika tidak, maka akan memmbayar tiket ke VIP, jika iya, maka akan langsung bayar yang tiket ekonomi dan output"pertadnningan berhasil di tambahkan. Setelah akan di tawarkan lagi untuk tambah tiket atau tidak? jika tidak maka akan kembali ke menu sebelumnya, jika iya, maka  akan kembali menambah tiket.
+2. **Tambah Tiket**: 
+   - Memasukkan nama pertandingan dan kategori. Setelah itu, admin akan memilih jenis tiket (ekonomi atau VIP). Jika berhasil, akan muncul output "Pertandingan berhasil ditambahkan". Admin akan ditanya apakah ingin menambah tiket lagi.
 
+3. **Daftar Tiket**: 
+   - Menampilkan daftar tiket yang tersedia.
 
-3. Jika memilih pilihan 2, yaitu akan menampilkan daftar tiket saja. 
+![Menu Update Tiket](https://github.com/user-attachments/assets/228b7336-c643-4c9d-9c8c-c2d3e7d4ece3)
 
-![Screenshot 2024-11-09 220949](https://github.com/user-attachments/assets/228b7336-c643-4c9d-9c8c-c2d3e7d4ece3)
+4. **Update Tiket**: 
+   - Memasukkan pertandingan yang ingin diupdate, termasuk kategori, harga tiket ekonomi, dan harga tiket VIP. Setelah berhasil, akan muncul output "Pertandingan berhasil diupdate". Admin akan ditanya apakah ingin mengupdate tiket lain.
 
-4. Pada pilihan 3, yaitu update tiket, dimana ini akan mengubah bagian daftar tiket, setelah itu akan masuk menu pilihan. Disini diminta untuk memasukan pertandingan yang ingin di update,lalu memasukkan kategori pertandingan, memasukkan harga tiket ekonomi, harga tiket VIP, dan akan akan muncul output "pertandingan berhasil di update". Setelah itu akan ada pertanyaan update tiket olahraga lain? jika iya, maka akan kembali mengupdate. Jika tidak, maka akan kembali ke menu admin.
+5. **Hapus Tiket**: 
+   - Memasukkan nomor dan nama pertandingan yang ingin dihapus. Setelah itu, akan muncul output "Paket pertandingan telah dihapus".
 
-5. Jika memilih pilihan angka selain yang tertera, maka akan kembali ke menu admin.
+![Menu Keluar Admin](https://github.com/user-attachments/assets/98a0c512-fd4a-461d-be0c-6ed570f36b56)
 
-![Screenshot 2024-11-09 221603](https://github.com/user-attachments/assets/98a0c512-fd4a-461d-be0c-6ed570f36b56)
-
-6. Lalu pilihan 4, yaitu hapus tiket, disini akan akan diminta untuk memasukkan no dan nama pertandingan/lomba yang ingin di hapus, setelah itu akan keluar output "paket pertandingan telah di hapus" dan kembali ke menu admin kembali.
-
-7. Pilihan yg ke 5 adalah keluar, disini akan keluar dan kembali ke menu yang paling awal.
+6. **Keluar**: 
+   - Mengeluarkan admin dan kembali ke menu paling awal.
 
 
 ## 🌟 Pendahuluan
@@ -1805,5 +1786,9 @@ Paket Indonesia vs Thailand telah dihapus
 ```
 
 <br/>
+
+## Penutup
+
+Aplikasi Tiket Sportfest dirancang untuk memberikan kemudahan dalam pembelian tiket olahraga. Dengan antarmuka yang sederhana dan fitur yang lengkap, pengguna dan admin dapat dengan mudah mengelola dan membeli tiket. Jika ada pertanyaan lebih lanjut, silakan hubungi tim pengembang.
 
 # ⭐ TERIMA KASIH!! ⭐
