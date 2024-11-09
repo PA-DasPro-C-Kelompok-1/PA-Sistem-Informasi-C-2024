@@ -29,7 +29,7 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 1. **Manajemen Akun**
    - Registrasi
 
-      ```
+      ```{python}
       def daftaruser():
        users = loadDataUser ()
        while True:
