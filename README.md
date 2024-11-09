@@ -237,6 +237,111 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 
       ```
    - Beli tiket Ekonomi/VIP
+
+
+
+   ```python
+   def proses_pembelian_tiket(pertandingan, username):
+    try:
+
+        if not pertandingan or not username:
+            print("Error: Data tidak lengkap")
+            return False
+
+        print("LIMIT PEMBELIAN TIKET HANYA 5 TIKET")
+        print("========================================")
+        print("             1. Tiket Ekonomi           ")
+        print("             2. Tiket VIP               ")
+        print("========================================")
+    
+        while True:
+            try:
+                nanyaJenis = int(input("Tiket yang ingin dibeli (1/2): "))
+                if nanyaJenis not in [1, 2]:
+                    print("Pilihan tidak valid. Silakan pilih 1 atau 2.")
+                    continue
+                
+                nanya = int(input("Berapa banyak tiket yang ingin anda beli: "))
+                
+
+                if nanya > 5:
+                    print("LIMIT TIKET HANYA 5 TIKET")
+                    continue
+                elif nanya <= 0:
+                    print("Tolong masukkan jumlah tiket yang valid!")
+                    continue
+
+
+                if nanyaJenis == 1:
+                    harga_tiket = pertandingan.get('Harga Tiket Ekonomi', 0)
+                    jenis_tiket = "Ekonomi"
+                else:
+                    harga_tiket = pertandingan.get('Harga Tiket VIP', 0)
+                    jenis_tiket = "VIP"
+
+                if harga_tiket <= 0:
+                    print("Error: Harga tiket tidak valid")
+                    return False
+
+                total_harga = harga_tiket * nanya
+
+                users = loadDataUser()
+                for user in users:
+                    if user["Nama User"] == username:
+                        if user.get("Saldo", 0) >= total_harga:
+                            user["Saldo"] -= total_harga
+                            savedataUser(users)
+                            
+                            invoice_success = generate_invoice(
+                                username, 
+                                pertandingan, 
+                                jenis_tiket, 
+                                nanya, 
+                                total_harga
+                            )
+                            
+                            if invoice_success:
+                                print(f"\nSisa saldo: Rp {user['Saldo']:,}")
+                                return True
+                            else:
+                                print("Gagal membuat invoice")
+                                return False
+                        else:
+                            print("======================================")
+                            print("\nSaldo tidak mencukupi")
+                            print(f"Total harga: Rp {total_harga:,}")
+                            print(f"Saldo Anda: Rp {user.get('Saldo', 0):,}")
+                            print("--------------------------------------")
+                            print("           1. Isi Saldo")
+                            print("             2. Batal")
+                            print("======================================")
+                            pilihan = int(input("Masukkan pilihan: "))
+                            if pilihan == 1:
+                                topUp4()
+                            elif pilihan == 2:
+                                print("Pembelian tiket dibatalkan")
+                                menu_pelanggan()
+                            return False
+                
+                print("User tidak ditemukan")
+                return False
+            
+            except (ValueError):
+                print("\n Mohon masukkan data yang valid")
+            except KeyboardInterrupt:
+                print("jangan tekan ctrl + C!")
+
+
+    except Exception as e:
+        print(f"Terjadi kesalahan dalam proses pembelian: {e}")
+        return False
+
+
+      ```
+
+
+
+
    - Generate invoice
 
 1. **Fitur Tambahan**
