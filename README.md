@@ -28,7 +28,9 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 ### Fitur Pengguna
 1. **Manajemen Akun**
    - Registrasi
+     
      <br/>
+     
       ```python
       def daftaruser():
        users = loadDataUser ()
@@ -69,9 +71,13 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
         except KeyboardInterrupt:
             print("jangan tekan ctrl + C!")
       ```
+      
        <br/>
+       
    - Login User
+     
       <br/>
+      
      ```python
      def loginUser():
        global username
@@ -104,9 +110,12 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 
      ```
     <br/>
+    
 1. **Pembelian Tiket**
    - Pilih cabang olahraga
+     
     <br/>
+    
    ```python
 
       def transaksi2():
@@ -232,8 +241,12 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
                print(f"Terjadi kesalahan: {e}")
 
       ```
+   <br/>
+   
    - Beli tiket Ekonomi/VIP
+     
     <br/>
+    
    ```python
       def proses_pembelian_tiket(pertandingan, username):
        try:
