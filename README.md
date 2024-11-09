@@ -70,8 +70,42 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
             print("jangan tekan ctrl + C!")
       ```
 
-   - Login Admin
+
    - Login User
+  
+     ```
+     def loginUser():
+       global username
+       users_data = loadDataUser()
+       while True:
+        try:
+            if not users_data:
+                print("No user data found.")
+                return False
+            
+            print("===== LOGIN USER =====")
+            username = input("Masukkan username: ")
+            password = pwinput.pwinput("Masukkan password: ", "*")
+            
+            for user in users_data:
+                if user["Nama User"] == username:
+                    if user["Pw User"] == password:
+                        print("Login berhasil!")
+                        return True
+                    else:
+                        print("Password salah!")
+                        return False
+                        break
+            print("Username tidak ditemukan!")
+            return False
+        except(ValueError):
+            print("\n Mohon masukkan data yang valid")
+        except KeyboardInterrupt:
+            print("jangan tekan ctrl + C!")
+
+     ```
+
+
 
 1. **Pembelian Tiket**
    - Pilih cabang olahraga
