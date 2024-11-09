@@ -11,6 +11,8 @@
 - [Kontribusi](#kontribusi)
 - [Lisensi](#lisensi)
 
+## 💫 Flowchart
+
 ## 🌟 Pendahuluan
 SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna membeli tiket untuk berbagai pertandingan olahraga dan admin mengelola jadwal pertandingan.
 
