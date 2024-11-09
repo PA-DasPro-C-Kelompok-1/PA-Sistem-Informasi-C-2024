@@ -20,15 +20,13 @@
 <br/>
 
 ## 📋 Daftar Isi
-- [Flowchart](#Flowchart)
-- [Pendahuluan](#pendahuluan)
-- [Fitur](#fitur)
-- [Persyaratan Sistem](#persyaratan-sistem)
-- [Instalasi](#instalasi)
-- [Penggunaan](#penggunaan)
-- [Struktur Proyek](#struktur-proyek)
-- [Kontribusi](#kontribusi)
-- [Lisensi](#lisensi)
+- [Flowchart]
+- [Pendahuluan]
+- [Fitur]
+- [Persyaratan Sistem]
+- [Output]
+- [Penutup]
+
 
 ## 💫 Flowchart
 
