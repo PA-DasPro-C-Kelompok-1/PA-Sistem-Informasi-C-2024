@@ -125,21 +125,26 @@ KELUAR
 
 ![Screenshot 2024-11-09 213105](https://github.com/user-attachments/assets/6ea3181c-0b27-4532-9a1a-3abf9c00a776)
 
-1. Pada pilihan menu 3 yaitu admin
+1. Pada pilihan menu 3 yaitu admin, nanti setelah selesai login, akan di arahkan ke menu pilihan baru, setelah itu, akan ada 5 pilihan, di antaranya 1.tambah tiket, 2.daftar tiket, 3.update tiket, 4.hapus tiket, dan 5.keluar.
+
+![Screenshot 2024-11-09 215753](https://github.com/user-attachments/assets/aa57f006-a610-470e-9535-b9bd2844a292)
+
+2. Jika memilih piliham 1 akan menambahkan tiket, setelah itu, pilih pertandingan olahraga. Nanti akan diminta unsuk memasukkan nama pertandingan yang ingin di tambahkan, lalu memasukkan kategori pertandingan, setelah itu, nanti akan membayar tiket yang ekonomi atau tidak? jika tidak, maka akan memmbayar tiket ke VIP, jika iya, maka akan langsung bayar yang tiket ekonomi dan output"pertadnningan berhasil di tambahkan. Setelah akan di tawarkan lagi untuk tambah tiket atau tidak? jika tidak maka akan kembali ke menu sebelumnya, jika iya, maka  akan kembali menambah tiket.
 
 
+3. Jika memilih pilihan 2, yaitu akan menampilkan daftar tiket saja. 
 
+![Screenshot 2024-11-09 220949](https://github.com/user-attachments/assets/228b7336-c643-4c9d-9c8c-c2d3e7d4ece3)
 
+4. Pada pilihan 3, yaitu update tiket, dimana ini akan mengubah bagian daftar tiket, setelah itu akan masuk menu pilihan. Disini diminta untuk memasukan pertandingan yang ingin di update,lalu memasukkan kategori pertandingan, memasukkan harga tiket ekonomi, harga tiket VIP, dan akan akan muncul output "pertandingan berhasil di update". Setelah itu akan ada pertanyaan update tiket olahraga lain? jika iya, maka akan kembali mengupdate. Jika tidak, maka akan kembali ke menu admin.
 
+5. Jika memilih pilihan angka selain yang tertera, maka akan kembali ke menu admin.
 
+![Screenshot 2024-11-09 221603](https://github.com/user-attachments/assets/98a0c512-fd4a-461d-be0c-6ed570f36b56)
 
+6. Lalu pilihan 4, yaitu hapus tiket, disini akan akan diminta untuk memasukkan no dan nama pertandingan/lomba yang ingin di hapus, setelah itu akan keluar output "paket pertandingan telah di hapus" dan kembali ke menu admin kembali.
 
-
-
-
-
-
-
+7. Pilihan yg ke 5 adalah keluar, disini akan keluar dan kembali ke menu yang paling awal.
 
 
 ## 🌟 Pendahuluan
