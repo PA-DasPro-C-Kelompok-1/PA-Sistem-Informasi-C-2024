@@ -28,7 +28,7 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 ### Fitur Pengguna
 1. **Manajemen Akun**
    - Registrasi
-
+     <br/>
       ```python
       def daftaruser():
        users = loadDataUser ()
@@ -69,10 +69,9 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
         except KeyboardInterrupt:
             print("jangan tekan ctrl + C!")
       ```
-
-
+       <br/>
    - Login User
-  
+      <br/>
      ```python
      def loginUser():
        global username
@@ -104,13 +103,10 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
             print("jangan tekan ctrl + C!")
 
      ```
-
-
-
+    <br/>
 1. **Pembelian Tiket**
    - Pilih cabang olahraga
-
-
+    <br/>
    ```python
 
       def transaksi2():
@@ -237,9 +233,7 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 
       ```
    - Beli tiket Ekonomi/VIP
-
-
-
+    <br/>
    ```python
       def proses_pembelian_tiket(pertandingan, username):
        try:
@@ -338,13 +332,9 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 
 
       ```
-
-
-
-
+    <br/>
    - Generate invoice
-  
-
+     <br/>
      ```python
         def generate_invoice(username, pertandingan, jenis_tiket, jumlah_tiket, total_harga):
           try:
@@ -400,14 +390,12 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
               import traceback
               traceback.print_exc()
               return False
-         ```
+     ```
       
-
-1. **Fitur Tambahan**
+    <br/>
+2. **Fitur Tambahan**
    - Top up saldo
-
-
-
+    <br/>
    ```python
          def topUp4():
           while True:
@@ -480,12 +468,10 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
               except Exception as e:
                   print(f"Terjadi kesalahan: {str(e)}")
 
-
       ```
+    <br/>
    - Lihat saldo E-Money
-
-
-
+ <br/>
    ```python
       def lihatSaldo3():
        while True:
@@ -538,8 +524,7 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
 
 
    - Pencarian tiket
-  
-
+   <br/>
    ```python
       def cari5():
           os.system("cls")
@@ -591,12 +576,9 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
        except Exception as e:
            print(f"\nTerjadi kesalahan: {str(e)}"))
    ```
-
-
-
+ <br/>
    - Sorting tiket
-
-
+ <br/>
    ```python
       def sorting_tiket():
        os.system("cls")
@@ -628,9 +610,10 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
        print(tabel)
    
    ```
-
+ <br/>
 ### Fitur Admin
-1. **Manajemen Tiket**
+3. **Manajemen Tiket**
+   
    - Tambah tiket baru
 <br/>
 
@@ -977,10 +960,10 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
                print("jangan tekan ctrl + C!")
    
                break
-      ```
+   ```
 
    
-1. **Manajemen Jadwal**
+4. **Manajemen Jadwal**
    - Lihat jadwal pertandingan
      <br/>
      ```python
@@ -1071,7 +1054,88 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
      ```
      <br/>
    - Cari tiket
+     <br/>
+     ```python
+        def cari_tiket():
+       while True:
+           print("\n+=================================+")
+           print("|            CARI TIKET           |")
+           print("+=================================+")
+           
+           try:
+               keyword = input("Masukkan kata kunci pencarian: ").lower()
+               
+               found = False
+               table = PrettyTable()
+               table.field_names = ["Kategori", "Pertandingan", "Jenis", "Waktu", "Tiket Ekonomi", "Tiket VIP"]
+               
+               for kategori in data['Kategori']:
+                   kategori_nama = kategori['Nama Kategori']
+                   for jadwal in kategori['Jadwal']:
+                       if (keyword in kategori_nama.lower() or 
+                           keyword in jadwal['Pertandingan'].lower()):
+                           table.add_row([
+                               kategori_nama,
+                               jadwal['Pertandingan'],
+                               jadwal['Kategori'],
+                               jadwal['Tanggal/Waktu'],
+                               f"Rp {jadwal['Harga Tiket Ekonomi']:,}",
+                               f"Rp {jadwal['Harga Tiket VIP']:,}"
+                           ])
+                           found = True
+               
+               if found:
+                   print("\nHasil Pencarian:")
+                   print(table)
+               else:
+                   print("\nTidak ditemukan hasil yang cocok dengan kata kunci pencarian.")
+                   break
+   
+               pilihan = input("\ningin mencari lagi? (y/n): ")
+               if pilihan == "y":
+                   cari5()
+               elif pilihan == "n":
+                   khususAtmint()
+   
+           except KeyboardInterrupt:
+               print("\nPencarian dibatalkan.")
+           except Exception as e:
+               print(f"\nTerjadi kesalahan: {str(e)}")
+     ```
+     <br/>
    - Sorting tiket
+     <br/>
+     ```python
+     def sorting_tiket():
+       os.system("cls")
+       semua_pertandingan = []
+       for kategori in data['Kategori']:
+           for jadwal in kategori['Jadwal']:
+               semua_pertandingan.append({
+                   'Kategori': kategori['Nama Kategori'],
+                   'Pertandingan': jadwal['Pertandingan'],
+                   'Kategori_Pertandingan': jadwal['Kategori'],
+                   'Tanggal/Waktu': jadwal['Tanggal/Waktu'],
+                   'Harga Tiket Ekonomi': jadwal['Harga Tiket Ekonomi'],
+                   'Harga Tiket VIP': jadwal['Harga Tiket VIP']
+               })
+   
+       semua_pertandingan.sort(key=itemgetter('Pertandingan'))
+   
+       tabel = PrettyTable()
+       tabel.field_names = ["Kategori", "Pertandingan", "Kategori Pertandingan", "Tanggal/Waktu", "Harga Ekonomi", "Harga VIP"]
+       for pertandingan in semua_pertandingan:
+           tabel.add_row([
+               pertandingan['Kategori'],
+               pertandingan['Pertandingan'],
+               pertandingan['Kategori_Pertandingan'],
+               pertandingan['Tanggal/Waktu'],
+               f"Rp{pertandingan['Harga Tiket Ekonomi']:,}",
+               f"Rp{pertandingan['Harga Tiket VIP']:,}"
+           ])
+       print(tabel)
+     ```
+     <br/>
 
 ## 💻 Persyaratan Sistem
 - Python 3.7+
