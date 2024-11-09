@@ -120,12 +120,8 @@ def loginAdmin():
     username = input("Masukkan username Anda: ")
     password = pwinput.pwinput("Masukkan Password Anda: ",'*')
     if username in admin and password == admin[username]:
-        print("+===============================================+")
-        print("|             SELAMAT DATANG ADMIN              |")
-        print("+===============================================+")
         return True
     else:
-        print("Username atau Password salah, Masukkan dengan Benar!!")
         return False
 
 #==================================================================DEF-ADMINCRUD===============================================================================#
@@ -195,9 +191,12 @@ def baris():
     print(" ")
 
 def khususAtmint():
+    os.system("cls")
     while True:
         try:
-            os.system("cls")
+            print("+===============================================+")
+            print("|             SELAMAT DATANG ADMIN              |")
+            print("+===============================================+")
             tabel = PrettyTable()
             tabel.clear_rows()
             tabel.title = "PILIHAN ADMIN"
@@ -222,7 +221,7 @@ def khususAtmint():
                 main()
             else:
                 print("Maaf, pilihan tidak ada di menu, masukkan pilihan yang benar")
-            break
+            khususAtmint()
         except(ValueError):
             print("\n Mohon masukkan data yang valid")
         except KeyboardInterrupt:
