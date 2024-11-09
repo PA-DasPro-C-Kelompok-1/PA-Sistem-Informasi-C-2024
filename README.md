@@ -725,8 +725,8 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
            except KeyboardInterrupt:
                print("jangan tekan ctrl + C!")
       ```
-   - Update informasi tiket
-  
+- Update informasi tiket
+  <br/>
 
    ```python
          def update():
@@ -852,12 +852,12 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
                print("\n Mohon masukkan data yang valid")
            except KeyboardInterrupt:
                print("jangan tekan ctrl + C!")
-      ```
+   ```
 
 
 
    - Hapus tiket
-
+   <br/>
 
    ```python
          def delete():
@@ -980,6 +980,94 @@ SportFest adalah aplikasi manajemen tiket olahraga yang memungkinkan pengguna me
    
 1. **Manajemen Jadwal**
    - Lihat jadwal pertandingan
+     <br/>
+     ```python
+     def bola():
+        tabel = PrettyTable()
+        tabel.title = "PERTANDINGAN BOLA"
+        tabel.field_names = ["No", "Pertandingan", "Kategori", "Waktu", "Harga Tiket Ekonomi", "Harga Tiket VIP"]
+        nomor = 1
+        for kategori in data['Kategori']:
+            if kategori['Nama Kategori'] == 'Bola':
+                for match in kategori['Jadwal']:
+                    tabel.add_row([f"[{nomor}]", match['Pertandingan'], match['Kategori'], match['Tanggal/Waktu'], f"Rp{match['Harga Tiket Ekonomi']:,}", f"Rp{match['Harga Tiket VIP']:,}"])
+                    nomor += 1
+                print(tabel)
+
+      def badminton():
+              tabel = PrettyTable()
+              tabel.title = "PERTANDINGAN BADMINTON"
+              tabel.field_names = ["No", "Pertandingan", "Kategori", "Waktu", "Harga Tiket Ekonomi", "Harga Tiket VIP"]
+              nomor = 1
+              for kategori in data['Kategori']:
+                  if kategori['Nama Kategori'] == 'Badminton':
+                      for match in kategori['Jadwal']:
+                          tabel.add_row([f"[{nomor}]", match['Pertandingan'], match['Kategori'], match['Tanggal/Waktu'], f"Rp{match['Harga Tiket Ekonomi']:,}", f"Rp{match['Harga Tiket VIP']:,}"])
+                          nomor += 1
+                      print(tabel)
+      
+      def basket():
+              tabel = PrettyTable()
+              tabel.title = "PERTANDINGAN BASKET"
+              tabel.field_names = ["No", "Pertandingan", "Kategori", "Waktu", "Harga Tiket Ekonomi", "Harga Tiket VIP"]
+              nomor = 1
+              for kategori in data['Kategori']:
+                  if kategori['Nama Kategori'] == 'Basket':
+                      for match in kategori['Jadwal']:
+                          tabel.add_row([f"[{nomor}]", match['Pertandingan'], match['Kategori'], match['Tanggal/Waktu'], f"Rp{match['Harga Tiket Ekonomi']:,}", f"Rp{match['Harga Tiket VIP']:,}"])
+                          nomor += 1
+                      print(tabel)
+      
+      def voli():
+              tabel = PrettyTable()
+              tabel.title = "PERTANDINGAN VOLI"
+              tabel.field_names = ["No", "Pertandingan", "Kategori", "Waktu", "Harga Tiket Ekonomi", "Harga Tiket VIP"]
+              nomor = 1
+              for kategori in data['Kategori']:
+                  if kategori['Nama Kategori'] == 'Voli':
+                      for match in kategori['Jadwal']:
+                          tabel.add_row([f"[{nomor}]", match['Pertandingan'], match['Kategori'], match['Tanggal/Waktu'], f"Rp{match['Harga Tiket Ekonomi']:,}", f"Rp{match['Harga Tiket VIP']:,}"])
+                          nomor += 1
+                      print(tabel)
+                      
+      def futsal():
+              tabel = PrettyTable()
+              tabel.title = "PERTANDINGAN FUTSAL"
+              tabel.field_names = ["No", "Pertandingan", "Kategori", "Waktu", "Harga Tiket Ekonomi", "Harga Tiket VIP"]
+              nomor = 1
+              for kategori in data['Kategori']:
+                  if kategori['Nama Kategori'] == 'Futsal':
+                      for match in kategori['Jadwal']:
+                          tabel.add_row([f"[{nomor}]", match['Pertandingan'], match['Kategori'], match['Tanggal/Waktu'], f"Rp{match['Harga Tiket Ekonomi']:,}", f"Rp{match['Harga Tiket VIP']:,}"])
+                          nomor += 1
+                      print(tabel)
+      
+      def baris():
+          print(" ")
+          print("+=======================================================================================================================+")
+          print(" ")
+           def menu():
+             os.system("cls")
+   
+       bola()
+   
+       baris()
+   
+       badminton()
+   
+       baris()
+   
+       basket()
+   
+       baris()
+   
+       voli()
+   
+       baris()
+   
+       futsal()
+     ```
+     <br/>
    - Cari tiket
    - Sorting tiket
 
